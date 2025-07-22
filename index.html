@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header border-bottom p-4">
+            <h1 class="text-secondary fw-bold">bookMarker</h1>
+        </div>
+        <div class="bookmark-body my-4 bg-light p-5">
+            <h1 class="text-center">BookMark your favorite sites</h1>
+            <div class="mb-3 text-center">
+                <label for="siteName" class="form-label fw-bold">Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+            </div>
+            <div class="mb-3 text-center">
+                <label for="siteUrl" class="form-label fw-bold">Site URL</label>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+            </div>
+            <div class="btn d-flex justify-content-center">
+                <button class="btn bg-info" id="submit">submit</button>
+                <button class="btn bg-danger d-none" id="update">Update</button>
+            </div>
+        </div>
+        <div class="search">
+            <input class="form-control" list="datalistOptions" id="search" placeholder="Type to search...">
+        </div>
+        <table class="w-100 text-center bg-light my-5 p-3">
+            <thead class="fw-bold">
+                <td>name</td>
+                <td>visitBtn</td>
+                <td>UpdateBtn</td>
+                <td>DeleteBtn</td>
+            </thead>
+            <tbody id="bookmarkContainer">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
